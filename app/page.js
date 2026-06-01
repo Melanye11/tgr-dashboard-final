@@ -66,17 +66,14 @@ export default function InvestorDashboard() {
 
   const formatoMoneda = (monto) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(monto || 0);
 
-  // NUEVA FUNCIÓN: EXPORTAR A EXCEL (CSV)
   const exportarCSV = () => {
     if (datosFiltrados.length === 0) {
       alert("No hay datos para exportar con los filtros actuales.");
       return;
     }
 
-    // Cabeceras de las columnas
     const cabeceras = ["Deudor", "Ubicación", "Comuna", "Rol", "Tribunal", "Expediente", "Tasación", "Avalúo"];
 
-    // Limpiamos los textos para que las comas no rompan el Excel y extraemos los valores
     const filas = datosFiltrados.map(item => [
       `"${(item.nombreDuegno || '').replace(/"/g, '""')}"`,
       `"${(item.direccionRol || '').replace(/"/g, '""')}"`,
@@ -85,16 +82,14 @@ export default function InvestorDashboard() {
       `"${item.nombreJuzgado || ''}"`,
       `"${item.identificacionExpedienteAdm || item.codDemanda || ''}"`,
       item.tasacion || 0,
-      item.avalujo || 0
+      item.avaluo || 0
     ]);
 
-    // Unimos todo usando punto y coma (;) que es el estándar para Excel en español
     const contenidoCSV = [
       cabeceras.join(";"),
       ...filas.map(fila => fila.join(";"))
     ].join("\n");
 
-    // Creamos el archivo y forzamos la descarga en el navegador
     const blob = new Blob(["\uFEFF" + contenidoCSV], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
@@ -129,7 +124,6 @@ export default function InvestorDashboard() {
           </div>
         </div>
         
-        {/* BOTÓN CON LA ACCIÓN DE EXPORTAR AÑADIDA */}
         <button 
           onClick={exportarCSV}
           className="w-full bg-slate-900 hover:bg-slate-800 transition-colors text-white flex items-center justify-center gap-2 py-3 rounded-lg text-sm font-bold"
@@ -228,7 +222,7 @@ export default function InvestorDashboard() {
                 <div className="grid grid-cols-2 gap-6 mb-6">
                   <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
                     <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Avalúo Fiscal</span>
-                    <span className="text-2xl font-black text-slate-800">{formatoMoneda(detalle.avalujo)}</span>
+                    <span className="text-2xl font-black text-slate-800">{formatoMoneda(detalle.avaluo)}</span>
                   </div>
                   <div className="bg-teal-50 p-4 rounded-xl border border-teal-100">
                     <span className="block text-xs font-bold text-teal-600 uppercase tracking-wider mb-1">Tasación Mínima</span>
