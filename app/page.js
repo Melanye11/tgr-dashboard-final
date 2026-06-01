@@ -133,22 +133,35 @@ export default function InvestorDashboard() {
       </aside>
 
       <main className="flex-1 p-8 overflow-y-auto relative">
+        {/* TARJETAS DE MÉTRICAS CORREGIDAS AQUÍ */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
-            <div className="bg-blue-50 p-3 rounded-lg text-blue-600"><Building2 size={24} /></div>
-            <div><p className="text-sm font-semibold text-slate-500">Activas</p><h3 className="text-2xl font-black">{metricas.total}</h3></div>
+            <div className="bg-blue-50 p-3 rounded-lg text-blue-600 shrink-0"><Building2 size={24} /></div>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold text-slate-500 truncate">Activas</p>
+              <h3 className="text-2xl font-black text-slate-800 truncate" title={metricas.total}>{metricas.total}</h3>
+            </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
-            <div className="bg-emerald-50 p-3 rounded-lg text-emerald-600"><Wallet size={24} /></div>
-            <div><p className="text-sm font-semibold text-slate-500">Volumen</p><h3 className="text-xl font-black">{formatoMoneda(metricas.sumaTasaciones)}</h3></div>
+            <div className="bg-emerald-50 p-3 rounded-lg text-emerald-600 shrink-0"><Wallet size={24} /></div>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold text-slate-500 truncate">Volumen</p>
+              <h3 className="text-xl font-black text-slate-800 truncate" title={formatoMoneda(metricas.sumaTasaciones)}>{formatoMoneda(metricas.sumaTasaciones)}</h3>
+            </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
-            <div className="bg-amber-50 p-3 rounded-lg text-amber-600"><TrendingUp size={24} /></div>
-            <div><p className="text-sm font-semibold text-slate-500">Promedio</p><h3 className="text-xl font-black">{formatoMoneda(metricas.promedio)}</h3></div>
+            <div className="bg-amber-50 p-3 rounded-lg text-amber-600 shrink-0"><TrendingUp size={24} /></div>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold text-slate-500 truncate">Promedio</p>
+              <h3 className="text-xl font-black text-slate-800 truncate" title={formatoMoneda(metricas.promedio)}>{formatoMoneda(metricas.promedio)}</h3>
+            </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
-            <div className="bg-purple-50 p-3 rounded-lg text-purple-600"><TrendingUp size={24} /></div>
-            <div><p className="text-sm font-semibold text-slate-500">Máximo</p><h3 className="text-xl font-black">{formatoMoneda(metricas.maxTasacion)}</h3></div>
+            <div className="bg-purple-50 p-3 rounded-lg text-purple-600 shrink-0"><TrendingUp size={24} /></div>
+            <div className="min-w-0 flex-1">
+              <p className="text-sm font-semibold text-slate-500 truncate">Máximo</p>
+              <h3 className="text-xl font-black text-slate-800 truncate" title={formatoMoneda(metricas.maxTasacion)}>{formatoMoneda(metricas.maxTasacion)}</h3>
+            </div>
           </div>
         </div>
 
