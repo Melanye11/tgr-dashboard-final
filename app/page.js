@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { MapPin, TrendingUp, Building2, Wallet, Search, Filter, ChevronRight, ChevronLeft, Download, X } from 'lucide-react';
+import { TrendingUp, Building2, Wallet, Search, Filter, ChevronRight, ChevronLeft, Download, X } from 'lucide-react'; // Eliminamos MapPin
 
 export default function InvestorDashboard() {
   const [datos, setDatos] = useState([]);
@@ -18,7 +18,18 @@ export default function InvestorDashboard() {
       try {
         const res = await fetch('/api/remates');
         const data = await res.json();
-        setDatos(Array.isArray(data) ? data : []);
+        const arrayDatos = Array.isArray(data) ? data : [];
+
+        // MAGIA AQUÍ: Filtro de Deduplicación
+        // Eliminamos registros que tengan exactamente el mismo Rol y Deudor
+        const datosUnicos = arrayDatos.filter((propiedad, index, arreglo) => {
+          return arreglo.findIndex(p => 
+            p.rol === propiedad.rol && 
+            p.nombreDuegno === propiedad.nombreDuegno
+          ) === index;
+        });
+
+        setDatos(datosUnicos);
       } catch (err) {
         console.error("Error:", err);
       } finally {
@@ -56,7 +67,7 @@ export default function InvestorDashboard() {
       const c = d.comunaJuzgado || 'N/A';
       conteo[c] = (conteo[c] || 0) + 1;
     });
-    return Object.entries(conteo).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value).slice(0, 5);
+    return Object.entries(conteo).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value).slice(0, 10); // Aumenté a Top 10
   }, [datosFiltrados]);
 
   const indiceUltimo = paginaActual * resultadosPorPagina;
@@ -94,7 +105,7 @@ export default function InvestorDashboard() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", `Reporte_Remates_TGR_${new Date().toLocaleDateString('es-CL')}.csv`);
+    link.setAttribute("download", `Reporte_Limpiado_TGR_${new Date().toLocaleDateString('es-CL')}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -133,19 +144,18 @@ export default function InvestorDashboard() {
       </aside>
 
       <main className="flex-1 p-8 overflow-y-auto relative">
-        {/* TARJETAS DE MÉTRICAS CORREGIDAS AQUÍ */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
             <div className="bg-blue-50 p-3 rounded-lg text-blue-600 shrink-0"><Building2 size={24} /></div>
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Activas</p>
+              <p className="text-sm font-semibold text-slate-500 truncate">Propiedades Únicas</p>
               <h3 className="text-2xl font-black text-slate-800 truncate" title={metricas.total}>{metricas.total}</h3>
             </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
             <div className="bg-emerald-50 p-3 rounded-lg text-emerald-600 shrink-0"><Wallet size={24} /></div>
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Volumen</p>
+              <p className="text-sm font-semibold text-slate-500 truncate">Volumen Real</p>
               <h3 className="text-xl font-black text-slate-800 truncate" title={formatoMoneda(metricas.sumaTasaciones)}>{formatoMoneda(metricas.sumaTasaciones)}</h3>
             </div>
           </div>
@@ -159,30 +169,27 @@ export default function InvestorDashboard() {
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
             <div className="bg-purple-50 p-3 rounded-lg text-purple-600 shrink-0"><TrendingUp size={24} /></div>
             <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Máximo</p>
+              <p className="text-sm font-semibold text-slate-500 truncate">Valor Máximo</p>
               <h3 className="text-xl font-black text-slate-800 truncate" title={formatoMoneda(metricas.maxTasacion)}>{formatoMoneda(metricas.maxTasacion)}</h3>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm col-span-1 lg:col-span-2">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Top Comunas</h3>
-            <div className="h-64">
+        {/* GRÁFICO EXPANDIDO Y MAPA ELIMINADO */}
+        <div className="mb-8">
+          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm w-full">
+            <h3 className="text-lg font-bold text-slate-800 mb-6">Concentración Geográfica (Top 10 Comunas con más Remates)</h3>
+            <div className="h-72">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={datosGrafico} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="#e2e8f0" />
                   <XAxis type="number" />
-                  <YAxis dataKey="name" type="category" width={100} tick={{fontSize: 12}} />
+                  <YAxis dataKey="name" type="category" width={120} tick={{fontSize: 12}} />
                   <Tooltip cursor={{fill: '#f1f5f9'}} />
                   <Bar dataKey="value" fill="#0369a1" radius={[0, 4, 4, 0]} barSize={24} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
-          </div>
-          <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col">
-            <h3 className="text-lg font-bold text-slate-800 mb-4">Mapa</h3>
-            <div className="flex-1 bg-slate-100 rounded-lg flex items-center justify-center text-center p-6"><MapPin size={48} className="text-blue-500 mx-auto" /></div>
           </div>
         </div>
 
