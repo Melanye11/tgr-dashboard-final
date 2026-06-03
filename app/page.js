@@ -20,7 +20,7 @@ export default function InvestorDashboard() {
         const data = await res.json();
         const arrayDatos = Array.isArray(data) ? data : [];
 
-        // Filtro de Deduplicación: Eliminamos registros con mismo Rol y Deudor
+        // Filtro de Deduplicación: Eliminamos registros duplicados por Rol y Deudor
         const datosUnicos = arrayDatos.filter((propiedad, index, arreglo) => {
           return arreglo.findIndex(p => 
             p.rol === propiedad.rol && 
@@ -118,7 +118,7 @@ export default function InvestorDashboard() {
     <div className="flex min-h-screen bg-[#f4f7f6] font-sans text-slate-800">
       <aside className="w-72 bg-white border-r border-slate-200 p-6 flex flex-col hidden md:flex shadow-sm z-10">
         <div className="mb-8">
-          <h2 className="text-2xl font-black text-slate-900 tracking-tight">RealEstate<span className="text-blue-600">HUB</span></h2>
+          <h2 className="text-2xl font-black text-slate-990 tracking-tight">RealEstate<span className="text-blue-600">HUB</span></h2>
           <p className="text-xs text-slate-500 font-medium mt-1 uppercase tracking-wider">Inteligencia de Remates</p>
         </div>
         <div className="space-y-6 flex-1">
@@ -191,6 +191,7 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
+        {/* TABLA ESTANDARIZADA RIGIDA */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           <table className="w-full text-left table-fixed">
             <thead>
@@ -228,13 +229,14 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
+        {/* MODAL EXPANDIDO COMPLETO (FICHA TÉCNICA FINANCIERA Y JUDICIAL) */}
         {detalle && (
           <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
             <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
               <div className="px-6 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
                 <div>
                   <h3 className="text-lg font-bold text-slate-800">Ficha Técnica del Remate</h3>
-                  <p className="text-xs text-slate-500">Expediente: {detalle.identificacionExpedienteAdm || 'N/A'}</p>
+                  <p className="text-xs text-slate-500">Expediente Administrativo: {detalle.identificacionExpedienteAdm || 'N/A'}</p>
                 </div>
                 <button onClick={() => setDetalle(null)} className="text-slate-400 hover:text-slate-700 hover:bg-slate-200 p-2 rounded-full transition-colors"><X size={20} /></button>
               </div>
@@ -251,23 +253,45 @@ export default function InvestorDashboard() {
                   </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div>
-                    <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Datos del Deudor</span>
-                    <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100">{detalle.nombreDuegno || 'No especificado'}</div>
-                  </div>
-                  <div>
-                    <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Información Judicial</span>
-                    <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-2">
-                      <p><strong>Tribunal:</strong> {detalle.nombreJuzgado || 'N/A'}</p>
-                      <p><strong>Dirección Tribunal:</strong> {detalle.direccionJuzgado || 'N/A'}</p>
-                      <p><strong>Rol Causa:</strong> {detalle.codDemanda || 'N/A'}</p>
-                      <p><strong>Tipo de Deuda:</strong> <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-bold">{detalle.tipoDeuda || 'Territorial'}</span></p>
+                    <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Identificación del Activo</span>
+                    <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-1">
+                      <p><strong>Deudor / Propietario:</strong> {detalle.nombreDuegno || 'No especificado'}</p>
+                      <p><strong>Ubicación del Inmueble:</strong> {detalle.direccionRol || 'No disponible'}</p>
+                      <p><strong>Comuna / Sector:</strong> {detalle.comunaJuzgado || 'N/A'}</p>
+                      <p><strong>Rol Propiedad (SII):</strong> {detalle.rol || 'N/A'}</p>
                     </div>
                   </div>
+
+                  {/* NUEVA CUADRÍCULA DE DOS COLUMNAS PARA DATOS JUDICIALES Y FECHAS */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Antecedentes del Remate</span>
+                      <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-2 h-full">
+                        <p><strong>Juzgado:</strong> {detalle.nombreJuzgado || 'N/A'}</p>
+                        <p><strong>Dirección Juzgado:</strong> {detalle.direccionJuzgado || 'N/A'}</p>
+                        <p><strong>Rol Judicial (Causa):</strong> {detalle.codDemanda || 'N/A'}</p>
+                        <p><strong>Tipo de Deuda:</strong> <span className="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-bold uppercase">{detalle.tipoDeuda || 'Territorial'}</span></p>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fechas y Períodos Fiscales</span>
+                      <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-2 h-full">
+                        <p><strong>Fecha del Remate:</strong> <span className="font-bold text-blue-600">{detalle.fechaRemate || detalle.fechaSubasta || 'Por confirmar'}</span></p>
+                        <p><strong>Período Impuesto Desde:</strong> {detalle.periodoDesde || 'N/A'}</p>
+                        <p><strong>Período Impuesto Hasta:</strong> {detalle.periodoHasta || 'N/A'}</p>
+                        <p><strong>Expediente TGR:</strong> {detalle.identificacionExpedienteAdm || 'N/A'}</p>
+                      </div>
+                    </div>
+                  </div>
+
                   <div>
                     <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Condiciones de Subasta</span>
-                    <div className="p-4 bg-amber-50 rounded-lg text-sm text-amber-900 border border-amber-100 leading-relaxed">{detalle.datosSubasta || 'No hay detalles específicos de la subasta cargados.'}</div>
+                    <div className="p-4 bg-amber-50 rounded-lg text-sm text-amber-900 border border-amber-100 leading-relaxed">
+                      {detalle.datosSubasta || 'No hay detalles específicos de la subasta cargados en el sistema central.'}
+                    </div>
                   </div>
                 </div>
               </div>
