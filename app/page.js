@@ -20,7 +20,7 @@ export default function InvestorDashboard() {
         const data = await res.json();
         const arrayDatos = Array.isArray(data) ? data : [];
 
-        // Filtro de Deduplicación: Eliminamos registros duplicados por Rol y Deudor
+        // Filtro de Deduplicación
         const datosUnicos = arrayDatos.filter((propiedad, index, arreglo) => {
           return arreglo.findIndex(p => 
             p.rol === propiedad.rol && 
@@ -76,13 +76,30 @@ export default function InvestorDashboard() {
 
   const formatoMoneda = (monto) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(monto || 0);
 
+  // FUNCIÓN PARA FORMATEAR LA FECHA CRUDA DE LA TGR
+  const formatearFecha = (fechaStr) => {
+    if (!fechaStr) return 'Por confirmar';
+    try {
+      const f = new Date(fechaStr);
+      if (isNaN(f)) return fechaStr; // Si falla, devuelve la original
+      const dia = String(f.getDate()).padStart(2, '0');
+      const mes = String(f.getMonth() + 1).padStart(2, '0');
+      const anio = f.getFullYear();
+      const hora = String(f.getHours()).padStart(2, '0');
+      const min = String(f.getMinutes()).padStart(2, '0');
+      return `${dia}-${mes}-${anio} ${hora}:${min} hrs.`;
+    } catch (e) {
+      return fechaStr;
+    }
+  };
+
   const exportarCSV = () => {
     if (datosFiltrados.length === 0) {
       alert("No hay datos para exportar con los filtros actuales.");
       return;
     }
 
-    const cabeceras = ["Deudor", "Ubicación", "Comuna", "Rol", "Tribunal", "Expediente", "Tasación", "Avalúo"];
+    const cabeceras = ["Deudor", "Ubicación", "Comuna", "Rol", "Tribunal", "Expediente", "Tasación", "Avalúo", "Fecha Remate"];
 
     const filas = datosFiltrados.map(item => [
       `"${(item.nombreDuegno || '').replace(/"/g, '""')}"`,
@@ -92,7 +109,8 @@ export default function InvestorDashboard() {
       `"${item.nombreJuzgado || ''}"`,
       `"${item.identificacionExpedienteAdm || item.codDemanda || ''}"`,
       item.tasacion || 0,
-      item.avaluo || 0
+      item.avaluo || 0,
+      `"${formatearFecha(item.fechaRemate)}"`
     ]);
 
     const contenidoCSV = [
@@ -104,7 +122,7 @@ export default function InvestorDashboard() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", `Reporte_Limpiado_TGR_${new Date().toLocaleDateString('es-CL')}.csv`);
+    link.setAttribute("download", `Reporte_Remates_TGR_${new Date().toLocaleDateString('es-CL')}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -191,7 +209,6 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
-        {/* TABLA ESTANDARIZADA RIGIDA */}
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
           <table className="w-full text-left table-fixed">
             <thead>
@@ -229,7 +246,6 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
-        {/* MODAL EXPANDIDO COMPLETO */}
         {detalle && (
           <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
             <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
@@ -278,9 +294,9 @@ export default function InvestorDashboard() {
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fechas y Períodos Fiscales</span>
                       <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-2 h-full">
-                        <p><strong>Fecha del Remate:</strong> <span className="font-bold text-blue-600">{detalle.fechaRemate || detalle.fecha || detalle.fechaSubasta || 'Por confirmar'}</span></p>
-                        <p><strong>Período Impuesto Desde:</strong> {detalle.periodoImpuestoDesde || detalle.periodoDesde || 'N/A'}</p>
-                        <p><strong>Período Impuesto Hasta:</strong> {detalle.periodoImpuestoHasta || detalle.periodoHasta || 'N/A'}</p>
+                        <p><strong>Fecha del Remate:</strong> <span className="font-bold text-blue-600">{formatearFecha(detalle.fechaRemate)}</span></p>
+                        <p><strong>Período Impuesto Desde:</strong> {detalle.periodoPublicacionI || 'N/A'}</p>
+                        <p><strong>Período Impuesto Hasta:</strong> {detalle.periodoPublicacionF || 'N/A'}</p>
                         <p><strong>Expediente TGR:</strong> {detalle.identificacionExpedienteAdm || 'N/A'}</p>
                       </div>
                     </div>
@@ -292,15 +308,6 @@ export default function InvestorDashboard() {
                       {detalle.datosSubasta || 'No hay detalles específicos de la subasta cargados en el sistema central.'}
                     </div>
                   </div>
-
-                  {/* CAJA NEGRA TEMPORAL DE DIAGNÓSTICO */}
-                  <div className="mt-4">
-                    <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Datos Crudos de la API (Para revisar nombres de campos)</span>
-                    <pre className="p-4 bg-slate-900 text-green-400 rounded-lg text-xs overflow-x-auto border border-slate-700 leading-relaxed">
-                      {JSON.stringify(detalle, null, 2)}
-                    </pre>
-                  </div>
-
                 </div>
               </div>
 
