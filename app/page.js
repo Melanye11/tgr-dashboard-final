@@ -118,7 +118,7 @@ export default function InvestorDashboard() {
     <div className="flex min-h-screen bg-[#f4f7f6] font-sans text-slate-800">
       <aside className="w-72 bg-white border-r border-slate-200 p-6 flex flex-col hidden md:flex shadow-sm z-10">
         <div className="mb-8">
-          <h2 className="text-2xl font-black text-slate-990 tracking-tight">RealEstate<span className="text-blue-600">HUB</span></h2>
+          <h2 className="text-2xl font-black text-slate-900 tracking-tight">RealEstate<span className="text-blue-600">HUB</span></h2>
           <p className="text-xs text-slate-500 font-medium mt-1 uppercase tracking-wider">Inteligencia de Remates</p>
         </div>
         <div className="space-y-6 flex-1">
@@ -229,7 +229,7 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
-        {/* MODAL EXPANDIDO COMPLETO (FICHA TÉCNICA FINANCIERA Y JUDICIAL) */}
+        {/* MODAL EXPANDIDO COMPLETO */}
         {detalle && (
           <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
             <div className="bg-white w-full max-w-2xl rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
@@ -264,7 +264,6 @@ export default function InvestorDashboard() {
                     </div>
                   </div>
 
-                  {/* NUEVA CUADRÍCULA DE DOS COLUMNAS PARA DATOS JUDICIALES Y FECHAS */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Antecedentes del Remate</span>
@@ -279,9 +278,9 @@ export default function InvestorDashboard() {
                     <div>
                       <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Fechas y Períodos Fiscales</span>
                       <div className="p-3 bg-slate-50 rounded-lg text-sm text-slate-700 border border-slate-100 space-y-2 h-full">
-                        <p><strong>Fecha del Remate:</strong> <span className="font-bold text-blue-600">{detalle.fechaRemate || detalle.fechaSubasta || 'Por confirmar'}</span></p>
-                        <p><strong>Período Impuesto Desde:</strong> {detalle.periodoDesde || 'N/A'}</p>
-                        <p><strong>Período Impuesto Hasta:</strong> {detalle.periodoHasta || 'N/A'}</p>
+                        <p><strong>Fecha del Remate:</strong> <span className="font-bold text-blue-600">{detalle.fechaRemate || detalle.fecha || detalle.fechaSubasta || 'Por confirmar'}</span></p>
+                        <p><strong>Período Impuesto Desde:</strong> {detalle.periodoImpuestoDesde || detalle.periodoDesde || 'N/A'}</p>
+                        <p><strong>Período Impuesto Hasta:</strong> {detalle.periodoImpuestoHasta || detalle.periodoHasta || 'N/A'}</p>
                         <p><strong>Expediente TGR:</strong> {detalle.identificacionExpedienteAdm || 'N/A'}</p>
                       </div>
                     </div>
@@ -293,6 +292,15 @@ export default function InvestorDashboard() {
                       {detalle.datosSubasta || 'No hay detalles específicos de la subasta cargados en el sistema central.'}
                     </div>
                   </div>
+
+                  {/* CAJA NEGRA TEMPORAL DE DIAGNÓSTICO */}
+                  <div className="mt-4">
+                    <span className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Datos Crudos de la API (Para revisar nombres de campos)</span>
+                    <pre className="p-4 bg-slate-900 text-green-400 rounded-lg text-xs overflow-x-auto border border-slate-700 leading-relaxed">
+                      {JSON.stringify(detalle, null, 2)}
+                    </pre>
+                  </div>
+
                 </div>
               </div>
 
