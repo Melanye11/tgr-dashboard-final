@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { TrendingUp, Building2, Wallet, Search, Filter, ChevronRight, ChevronLeft, Download, X } from 'lucide-react'; // Eliminamos MapPin
+import { TrendingUp, Building2, Wallet, Search, Filter, ChevronRight, ChevronLeft, Download, X } from 'lucide-react';
 
 export default function InvestorDashboard() {
   const [datos, setDatos] = useState([]);
@@ -20,8 +20,7 @@ export default function InvestorDashboard() {
         const data = await res.json();
         const arrayDatos = Array.isArray(data) ? data : [];
 
-        // MAGIA AQUÍ: Filtro de Deduplicación
-        // Eliminamos registros que tengan exactamente el mismo Rol y Deudor
+        // Filtro de Deduplicación: Eliminamos registros con mismo Rol y Deudor
         const datosUnicos = arrayDatos.filter((propiedad, index, arreglo) => {
           return arreglo.findIndex(p => 
             p.rol === propiedad.rol && 
@@ -67,7 +66,7 @@ export default function InvestorDashboard() {
       const c = d.comunaJuzgado || 'N/A';
       conteo[c] = (conteo[c] || 0) + 1;
     });
-    return Object.entries(conteo).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value).slice(0, 10); // Aumenté a Top 10
+    return Object.entries(conteo).map(([name, value]) => ({ name, value })).sort((a, b) => b.value - a.value).slice(0, 10);
   }, [datosFiltrados]);
 
   const indiceUltimo = paginaActual * resultadosPorPagina;
@@ -175,10 +174,9 @@ export default function InvestorDashboard() {
           </div>
         </div>
 
-        {/* GRÁFICO EXPANDIDO Y MAPA ELIMINADO */}
         <div className="mb-8">
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm w-full">
-            <h3 className="text-lg font-bold text-slate-800 mb-6">Concentración Geográfica (Top 10 Comunas con más Remates)</h3>
+            <h3 className="text-lg font-bold text-slate-800 mb-6">Concentración Geográfica (Top 10 Comunas)</h3>
             <div className="h-72">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={datosGrafico} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
@@ -194,19 +192,22 @@ export default function InvestorDashboard() {
         </div>
 
         <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-          <table className="w-full text-left">
+          <table className="w-full text-left table-fixed">
             <thead>
               <tr className="bg-[#f4f7fa] text-[#2b4c7e] text-sm font-bold border-b border-slate-200">
-                <th className="px-6 py-4">Deudor</th><th className="px-6 py-4">Ubicación</th><th className="px-6 py-4">Tasacion</th><th className="px-6 py-4">Acciones</th>
+                <th className="px-6 py-4 w-1/4">Deudor</th>
+                <th className="px-6 py-4 w-2/5">Ubicación</th>
+                <th className="px-6 py-4 w-1/5">Tasación</th>
+                <th className="px-6 py-4 w-32 text-center">Acciones</th>
               </tr>
             </thead>
             <tbody className="text-sm text-slate-600 divide-y divide-slate-200">
               {registrosActuales.map((item, i) => (
                 <tr key={i} className="hover:bg-slate-50 transition-colors">
-                  <td className="px-6 py-4 font-medium max-w-[200px] truncate">{item.nombreDuegno || 'N/A'}</td>
-                  <td className="px-6 py-4 truncate">{item.direccionRol || 'N/A'}</td>
+                  <td className="px-6 py-4 font-medium truncate" title={item.nombreDuegno}>{item.nombreDuegno || 'N/A'}</td>
+                  <td className="px-6 py-4 truncate" title={item.direccionRol}>{item.direccionRol || 'N/A'}</td>
                   <td className="px-6 py-4 font-medium">{formatoMoneda(item.tasacion)}</td>
-                  <td className="px-6 py-4">
+                  <td className="px-6 py-4 flex justify-center">
                     <button 
                       onClick={() => setDetalle(item)} 
                       className="px-4 py-1.5 border border-slate-300 text-blue-600 rounded flex items-center gap-2 hover:bg-blue-50 transition-colors text-xs font-semibold bg-white"
