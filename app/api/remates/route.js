@@ -1,20 +1,38 @@
 import { NextResponse } from 'next/server';
-import { getRematesActivos} from '@/services/tgrService;
+import { getRematesActivos } from '@/services/tgrService';
 
-export async function GET() {
+export async function GET(request) {
   try {
-    const datosLimpios = await getRematesActivos();
+    // Extraer parámetros de búsqueda de la URL
+    const { searchParams } = new URL(request.url);
+    const comuna = searchParams.get('comuna');
+    const busqueda = searchParams.get('busqueda');
     
-      return NextResponse.json({
-        sucess: true,
-        count: datosLimpios.length,
-        data: datosLimpios
-      }, {status: 200 });
+    let datos = await getRematesActivos();
+
+    // Lógica de filtrado en el servidor (arquitectura REST)
+    if (comuna && comuna !== 'TODAS') {
+      datos = datos.filter(item => item.comunaJuzgado === comuna);
+    }
+
+    if (busqueda) {
+      const b = busqueda.toLowerCase();
+      datos = datos.filter(item => 
+        (item.direccionRol || '').toLowerCase().includes(b) || 
+        (item.nombreDuegno || '').toLowerCase().includes(b)
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      count: datos.length,
+      data: datos
+    }, { status: 200 });
 
   } catch (error) {
     return NextResponse.json({ 
-      success: false,
-      error: " Error al intentar obtener los remates "
-    }, { satus: 500 });
+      success: false, 
+      error: "Error interno en el servidor" 
+    }, { status: 500 });
   }
 }
