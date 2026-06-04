@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getRematesActivos } from '@/services/tgrService';
+import { getRematesActivos } from '../../../services/tgrService';
 
 export async function GET(request) {
   try {
