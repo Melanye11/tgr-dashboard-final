@@ -8,7 +8,7 @@ export async function getRematesActivos() {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Accept": "application/json"
       },
-      next: { revalidate: 3600 } 
+      next: { tags: ['datos-tgr'] }
     });
 
     if (!respuesta.ok) {
