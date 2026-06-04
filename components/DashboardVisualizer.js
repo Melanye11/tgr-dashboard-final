@@ -13,7 +13,7 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
   
   const resultadosPorPagina = 5;
 
-  // Lógica de memorización para rendimiento (evita recalcular en cada render)
+  // Lógica de memorización para rendimiento
   const comunasUnicas = useMemo(() => {
     const comunas = datosIniciales.map(d => d.comunaJuzgado || 'Desconocida');
     return ['TODAS', ...new Set(comunas)].sort();
@@ -42,7 +42,6 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
       const c = d.comunaJuzgado || 'N/A';
       conteo[c] = (conteo[c] || 0) + 1;
     });
-    // Retorna el top 10 comunas con más remates
     return Object.entries(conteo)
       .map(([name, value]) => ({ name, value }))
       .sort((a, b) => b.value - a.value)
@@ -55,8 +54,18 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
   const registrosActuales = datosFiltrados.slice(indicePrimero, indiceUltimo);
   const totalPaginas = Math.ceil(datosFiltrados.length / resultadosPorPagina);
 
-  // Utilidades de formato
+  // Utilidades de formato (Estándar para tablas y completo)
   const formatoMoneda = (monto) => new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(monto || 0);
+
+  // Utilidad de formato compacto (Para tarjetas KPI)
+  const formatoMonedaCompacto = (monto) => {
+    return new Intl.NumberFormat('es-CL', { 
+      style: 'currency', 
+      currency: 'CLP',
+      notation: 'compact',
+      maximumFractionDigits: 1 
+    }).format(monto || 0);
+  };
 
   const formatearFecha = (fechaStr) => {
     if (!fechaStr) return 'Por confirmar';
@@ -147,39 +156,46 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
       {/* Contenido Principal */}
       <main className="flex-1 p-8 overflow-y-auto relative">
         
-        {/* Tarjetas de Métricas (KPIs) */}
+        {/* Tarjetas de Métricas (KPIs) - ACTUALIZADAS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4 transition-transform hover:-translate-y-1">
             <div className="bg-blue-50 p-3 rounded-lg text-blue-600 shrink-0"><Building2 size={24} /></div>
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Propiedades Únicas</p>
-              <h3 className="text-2xl font-black text-slate-800 truncate">{metricas.total}</h3>
+            <div className="w-full">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Propiedades Únicas</p>
+              <h3 className="text-2xl font-black text-slate-800">{metricas.total}</h3>
             </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4 transition-transform hover:-translate-y-1">
             <div className="bg-emerald-50 p-3 rounded-lg text-emerald-600 shrink-0"><Wallet size={24} /></div>
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Volumen Real</p>
-              <h3 className="text-xl font-black text-slate-800 truncate">{formatoMoneda(metricas.sumaTasaciones)}</h3>
+            <div className="w-full">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Volumen Real</p>
+              {/* Se usa formatoMonedaCompacto y título con valor completo al pasar el mouse */}
+              <h3 className="text-xl lg:text-2xl font-black text-slate-800 tracking-tight leading-none break-words" title={formatoMoneda(metricas.sumaTasaciones)}>
+                {formatoMonedaCompacto(metricas.sumaTasaciones)}
+              </h3>
             </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4 transition-transform hover:-translate-y-1">
             <div className="bg-amber-50 p-3 rounded-lg text-amber-600 shrink-0"><TrendingUp size={24} /></div>
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Promedio</p>
-              <h3 className="text-xl font-black text-slate-800 truncate">{formatoMoneda(metricas.promedio)}</h3>
+            <div className="w-full">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Promedio</p>
+              <h3 className="text-xl lg:text-2xl font-black text-slate-800 tracking-tight leading-none break-words" title={formatoMoneda(metricas.promedio)}>
+                {formatoMonedaCompacto(metricas.promedio)}
+              </h3>
             </div>
           </div>
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4 transition-transform hover:-translate-y-1">
             <div className="bg-purple-50 p-3 rounded-lg text-purple-600 shrink-0"><TrendingUp size={24} /></div>
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-semibold text-slate-500 truncate">Valor Máximo</p>
-              <h3 className="text-xl font-black text-slate-800 truncate">{formatoMoneda(metricas.maxTasacion)}</h3>
+            <div className="w-full">
+              <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Valor Máximo</p>
+              <h3 className="text-xl lg:text-2xl font-black text-slate-800 tracking-tight leading-none break-words" title={formatoMoneda(metricas.maxTasacion)}>
+                {formatoMonedaCompacto(metricas.maxTasacion)}
+              </h3>
             </div>
           </div>
         </div>
 
-        {/* Gráfico Dinámico (Con altura fija protegida) */}
+        {/* Gráfico Dinámico */}
         <div className="mb-8">
           <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm w-full">
             <h3 className="text-lg font-bold text-slate-800 mb-6">Concentración Geográfica (Top 10 Comunas)</h3>
@@ -220,7 +236,6 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
                   <tr className="bg-[#f4f7fa] text-[#2b4c7e] text-sm font-bold border-b border-slate-200">
                     <th className="px-6 py-4 w-1/4">Deudor</th>
                     <th className="px-6 py-4 w-2/5">Ubicación</th>
-                    {/* Alineación estricta para columnas financieras */}
                     <th className="px-6 py-4 w-1/5 text-right">Tasación</th>
                     <th className="px-6 py-4 w-32 text-center">Acciones</th>
                   </tr>
@@ -230,7 +245,6 @@ export default function DashboardVisualizer({ datosIniciales = [] }) {
                     <tr key={i} className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 font-medium truncate" title={item.nombreDuegno}>{item.nombreDuegno || 'N/A'}</td>
                       <td className="px-6 py-4 truncate" title={item.direccionRol}>{item.direccionRol || 'N/A'}</td>
-                      {/* whitespace-nowrap evita que el número se rompa en dos líneas */}
                       <td className="px-6 py-4 font-medium whitespace-nowrap text-right">{formatoMoneda(item.tasacion)}</td>
                       <td className="px-6 py-4 flex justify-center">
                         <button 
