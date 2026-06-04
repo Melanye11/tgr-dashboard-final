@@ -1,5 +1,5 @@
 import { getRematesActivos } from '@/services/tgrService';
-import DashboardVisualizer from '@/components(DashboardVisualizer';
+import DashboardVisualizer from '@/components/DashboardVisualizer';
 
 export const revalidate = 3600;
 
