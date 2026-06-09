@@ -1,0 +1,1 @@
+export { getRematesActivos } from './tgrService';

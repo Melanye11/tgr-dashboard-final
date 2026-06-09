@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sincronizar?api=tgr",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}
