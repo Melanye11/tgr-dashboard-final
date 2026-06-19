@@ -1,8 +1,8 @@
 {
   "modulo": "compra-agil",
-  "fechaUsada": "2026-06-18T23:59:59Z",
-  "guardadoEn": "2026-06-18T23:46:26.834Z",
-  "totalRegistros": 71,
+  "fechaUsada": "2026-06-19T23:59:59Z",
+  "guardadoEn": "2026-06-19T01:41:21.160Z",
+  "totalRegistros": 84,
   "filas": [
     {
       "source": "mercado-publico",
@@ -1695,6 +1695,262 @@
         {
           "id": 1607881,
           "nombre": "26494_26456_275_70R22.5.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3932-239-COT26",
+      "title": "SOLICITUD DE MEDICAMENTOS N° 77 - FARMACIA COMUNITARIA - CESFAM PLACILLA, SEXTA REGIÓN.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PLACILLA",
+      "buyerRut": "69.090.200-1",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 250000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 21:12",
+      "closingAt": "2026-06-20 22:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3932-238-COT26",
+      "title": "SOLICITUD DE MEDICAMENTOS N° 76 - FARMACIA COMUNITARIA - CESFAM PLACILLA, SEXTA REGIÓN.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PLACILLA",
+      "buyerRut": "69.090.200-1",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 1800000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 21:07",
+      "closingAt": "2026-06-20 22:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3932-237-COT26",
+      "title": "SOLICITUD DE MEDICAMENTOS N° 75 - FARMACIA COMUNITARIA - CESFAM PLACILLA, SEXTA REGIÓN.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PLACILLA",
+      "buyerRut": "69.090.200-1",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 400000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:54",
+      "closingAt": "2026-06-20 22:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3754-65-COT26",
+      "title": "Adquisición de Parlante y Micrófono para Consejo Consultivo de Salud Los Rulos ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE CANELA",
+      "buyerRut": "69.041.300-0",
+      "buyerRegion": "Región de Coquimbo ",
+      "amount": 250000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:47",
+      "closingAt": "2026-06-22 10:00",
+      "items": [
+        {
+          "id": 1607912,
+          "nombre": "Criterios Evaluacion Adq Parlante y Microfonos.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2057-152-COT26",
+      "title": "ADQUISICION DE INSUMOS DE INFORMATICA ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD ARTURO PRAT",
+      "buyerRut": "70.777.500-9",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 1939468,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:38",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607911,
+          "nombre": "58404.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057491-1279-COT26",
+      "title": "ADQUISICIÓN DE INSUMOS PARA LABORATORIO CLÍNICO Y BIOLOGÍA MOLECULAR",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
+      "buyerRut": "61.608.408-9",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:14",
+      "closingAt": "2026-06-19 20:20",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1048-204-COT26",
+      "title": "Adq. Material Publicitario, Libretas, Bolsas y Otros (JUVEN, SECPLA, FOMENT)",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE EL TABO",
+      "buyerRut": "69.073.700-0",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 3000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:06",
+      "closingAt": "2026-06-19 22:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057491-1278-COT26",
+      "title": "ADQUISICIÓN DE LANCETAS Y EXTRACTOS ALERGÉNICOS PARA PRICK TEST",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO DE SALUD ORIENTE HOSPITAL LUIS CALVO MACKENNA",
+      "buyerRut": "61.608.408-9",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 700000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 20:01",
+      "closingAt": "2026-06-19 20:10",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3947-386-COT26",
+      "title": "INSTALACION ELECTRICA FIESTA DE SAN JUAN,  A REALIZARSE EL DÍA SÁBADO 27 Y DO-MINGO 28 DE JUNIO DEL 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SANTA JUANA",
+      "buyerRut": "69.151.400-5",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 2300000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:58",
+      "closingAt": "2026-06-21 11:00",
+      "items": [
+        {
+          "id": 1607910,
+          "nombre": "REQUERIMIENTO ELECTRICIDAD FIESTA DE SAN JUAN  XXII 2026.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1469-1855-COT26",
+      "title": "20-42147 Adquisición de productos de insumos de servicio para Unidad de Educación continúa ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE TALCA",
+      "buyerRut": "70.885.500-6",
+      "buyerRegion": "Región del Maule ",
+      "amount": 500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:46",
+      "closingAt": "2026-06-19 19:50",
+      "items": [
+        {
+          "id": 1607908,
+          "nombre": "20-42147 03_CA_INSUMOSUEC.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3947-385-COT26",
+      "title": "INSTALACIÓN DE CARPA, FIESTA DE SAN JUAN, XXII VERSION, A REALIZARSE EL DÍA SÁBADO 27 Y DOMINGO 28 DE JUNIO DEL 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SANTA JUANA",
+      "buyerRut": "69.151.400-5",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 2500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:45",
+      "closingAt": "2026-06-21 16:00",
+      "items": [
+        {
+          "id": 1607909,
+          "nombre": "REQUERIMIENTO ARRIENDO DE CARPA FIESTA DE SAN JUAN  2026.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1048-203-COT26",
+      "title": "Adq. Insumos Talleres, Block, Acuarelas, Pinceles, Pilas y Otros (DIDECO/CEDIAM N°945)",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE EL TABO",
+      "buyerRut": "69.073.700-0",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 592750,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:42",
+      "closingAt": "2026-06-19 22:00",
+      "items": [
+        {
+          "id": 1607907,
+          "nombre": "EETT CEDIAM N°945 INSUMOS DE  TALLERES 2_20260618_0001.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2129-44-COT26",
+      "title": "ADQUISICION DE 2 JUEGOS MODULARES, PARA LA MUNICIPALIDAD DE RANQUIL",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Ilustre Municipalidad de Ranquil",
+      "buyerRut": "69.150.300-3",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 5000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:40",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607906,
+          "nombre": "Solicitud del requerimiento, 2 Juegos Modulares.docx"
         }
       ]
     }

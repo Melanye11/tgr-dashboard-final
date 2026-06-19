@@ -30,3 +30,6 @@ export const MP_SUBMODULOS = [
   export function obtenerSubmoduloMp(submoduloId) {
     return MP_SUBMODULOS.find((item) => item.id === submoduloId) ?? null;
   }
+
+  export const URL_FICHA_COMPRA_AGIL =
+  'https://buscador.mercadopublico.cl/ficha?code=';

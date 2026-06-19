@@ -1,6 +1,6 @@
 import { fetchCompraAgil } from '../shared/fetchCompraAgil';
 import { listarCompraAgilConSnapshot } from '../shared/listarCompraAgilConSnapshot';
-import { normalizarCompraAgilEntidad } from '@/lib/mercado-publico/normalizarCompraAgilEntidad';
+import { normalizarCompraAgilDetalle } from '@/lib/mercado-publico/normalizarCompraAgilDetalle';
 
 const CACHE_TAG = 'mp-compra-agil';
 
@@ -12,7 +12,9 @@ export async function obtenerDetalleCompraAgil(codigoCompraAgil) {
   const respuestaApi = await fetchCompraAgil(`/v2/compra-agil/${codigoCompraAgil}`, {
     cacheTag: CACHE_TAG,
   });
-  const crudo = respuestaApi?.payload ?? respuestaApi;
-  const item = Array.isArray(crudo?.items) ? crudo.items[0] : crudo;
-  return normalizarCompraAgilEntidad(item);
+
+  const payload = respuestaApi?.payload;
+  if (!payload?.codigo) return null;
+
+  return normalizarCompraAgilDetalle(respuestaApi);
 }
