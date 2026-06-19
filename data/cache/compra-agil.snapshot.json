@@ -1,0 +1,1702 @@
+{
+  "modulo": "compra-agil",
+  "fechaUsada": "2026-06-18T23:59:59Z",
+  "guardadoEn": "2026-06-18T23:46:26.834Z",
+  "totalRegistros": 71,
+  "filas": [
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1426099-49-COT26",
+      "title": "ADQUISICION DE INSUMOS COMPUTACIONALES PARA REDES INFORMATICAS",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO NACIONAL DE REINSERCION SOCIAL JUVENIL",
+      "buyerRut": "62.000.970-9",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 950000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:09",
+      "closingAt": "2026-06-23 10:00",
+      "items": [
+        {
+          "id": 1607800,
+          "nombre": "ANEXOS CA.docx"
+        },
+        {
+          "id": 1607801,
+          "nombre": "SCAN_20260611_154912604.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2735-742-COT26",
+      "title": "ADQUISICIÓN DEL SERVICIO DE PRODUCCIÓN PARA VACUNATORIO CESFAM LO BARNECHEA",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD LO BARNECHEA",
+      "buyerRut": "69.255.200-8",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 3000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:19",
+      "closingAt": "2026-06-22 18:00",
+      "items": [
+        {
+          "id": 1607818,
+          "nombre": "Compra Ágil Vacunatorio CESFAM LB.pdf"
+        },
+        {
+          "id": 1607819,
+          "nombre": "Cláusula de desempate Compra Ágil.pdf"
+        },
+        {
+          "id": 1607820,
+          "nombre": "Flyer Canal de Denuncias.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3704-119-COT26",
+      "title": "Adquirir maquinas de ejercicios para menores",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Ilustre Municipalidad de Cabo de Hornos",
+      "buyerRut": "69.254.400-5",
+      "buyerRegion": "Región de Magallanes y de la Antártica",
+      "amount": 1004595,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:14",
+      "closingAt": "2026-06-22 16:00",
+      "items": [
+        {
+          "id": 1607816,
+          "nombre": "Maquinas de ejercicios para menores.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "5586-1507-COT26",
+      "title": "B/S MUEBLE AEREO PARA IMPLEMENTACION DE LABORATORIO",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE LA FRONTERA",
+      "buyerRut": "87.912.900-1",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 572000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:15",
+      "closingAt": "2026-06-22 15:00",
+      "items": [
+        {
+          "id": 1607827,
+          "nombre": "SEC 2442.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4017-46-COT26",
+      "title": "ADQ. DE MATERIALES DE OFICINA, PARA ABASTECIMIENTO BODEGA CESFAM PUTRE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "ILUSTRE MUNICIPALIDAD DE PUTRE",
+      "buyerRut": "69.250.800-9",
+      "buyerRegion": "Región de Arica y Parinacota",
+      "amount": 4500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:35",
+      "closingAt": "2026-06-22 15:00",
+      "items": [
+        {
+          "id": 1607847,
+          "nombre": "PRESENTACIÓN PROPUESTA MATERIAL DE OFICINA.xlsx"
+        },
+        {
+          "id": 1607848,
+          "nombre": "FORMATO COTIZACION COMPRA AGIL 2026.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2306-466-COT26",
+      "title": "vestuario deportivo para alumnos prioritarios y preferentes de la Escuela Rural los Abedules,FONDOS SEP",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE OSORNO",
+      "buyerRut": "69.210.100-6",
+      "buyerRegion": "Región de los Lagos ",
+      "amount": 3000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:23",
+      "closingAt": "2026-06-22 15:00",
+      "items": [
+        {
+          "id": 1607833,
+          "nombre": "TTR VESTUARIO.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1425-25-COT26",
+      "title": "MANTENCION POR KILOMETRAJE DEL VEHICULO FISCAL SSANGYONG ACTYON SPORT PATENTE PBPX79. ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO NACIONAL DE PESCA",
+      "buyerRut": "60.701.008-0",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 1400000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:42",
+      "closingAt": "2026-06-22 15:00",
+      "items": [
+        {
+          "id": 1607860,
+          "nombre": "FORMULARIO COMPRA AGIL MANTENCION SSANGYONG.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4869-4-COT26",
+      "title": "ADQUISICION DE SEÑALETICA PARA OFICINAS DE LA MUNICIPALIDAD DE PERALILLO.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PERALILLO",
+      "buyerRut": "69.091.500-6",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 1500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:48",
+      "closingAt": "2026-06-22 12:00",
+      "items": [
+        {
+          "id": 1607869,
+          "nombre": "TIPOLOGIAS SEÑALETICAS.pdf"
+        },
+        {
+          "id": 1607870,
+          "nombre": "CODIGO COLORES.png"
+        },
+        {
+          "id": 1607871,
+          "nombre": "IMAGEN REFERENCIA.jpeg"
+        },
+        {
+          "id": 1607872,
+          "nombre": "SEÑALETICAS.pdf"
+        },
+        {
+          "id": 1607873,
+          "nombre": "MEDIDAS SEÑALETICAS.pdf"
+        },
+        {
+          "id": 1607874,
+          "nombre": "CDP SEÑALETICA (META 60%).pdf"
+        },
+        {
+          "id": 1607875,
+          "nombre": "ESPECIFICACIONES TECNICAS.pdf"
+        },
+        {
+          "id": 1607876,
+          "nombre": "ACLARATORIA MEDIDAS ,  ANCLAJE YMATERIALIDAD.pdf"
+        },
+        {
+          "id": 1607877,
+          "nombre": "LISTADO DE SEÑALETICAS.xlsx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2766-124-COT26",
+      "title": "ADQUISICIÓN DE CAMILLAS SALUD LA CISTERNA 5-136",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE LA CISTERNA",
+      "buyerRut": "69.072.000-0",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 1693500,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:33",
+      "closingAt": "2026-06-22 12:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2686-262-COT26",
+      "title": "Curso de Manejo y Uso de Plaguicidas Agrícolas con Credencial Arbóreas",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE COLINA",
+      "buyerRut": "69.071.500-7",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 3000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:14",
+      "closingAt": "2026-06-22 12:00",
+      "items": [
+        {
+          "id": 1607810,
+          "nombre": "MEMO-2026-07446 (part 1) - signed.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4353-84-COT26",
+      "title": "OBRAS MENORES COMPLEMENTARIAS PARA HABILITACIÓN DEL CENTRO DE LA INFANCIA Y LA FAMILIA ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE FREIRINA",
+      "buyerRut": "69.030.600-k",
+      "buyerRegion": "Región de Atacama ",
+      "amount": 1661478,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:16",
+      "closingAt": "2026-06-22 11:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2343-243-COT26",
+      "title": "Adquisición de televisor / pedido 612",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SANTIAGO",
+      "buyerRut": "69.070.100-6",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 400000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:47",
+      "closingAt": "2026-06-22 11:00",
+      "items": [
+        {
+          "id": 1607866,
+          "nombre": "FICHA TÉCNICA TELEVISOR.pdf"
+        },
+        {
+          "id": 1607867,
+          "nombre": "DATOS ACTUALIZADOS DE LA EMPRESA.docx"
+        },
+        {
+          "id": 1607868,
+          "nombre": "Multuas y sanciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "5060-427-COT26",
+      "title": "S308.SERVICIO DE MANTENCION DE EXTINTORES LICEO PABLO NERUDA, MEMO N° 8",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE TEMUCO",
+      "buyerRut": "69.190.700-7",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 800000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:14",
+      "closingAt": "2026-06-22 10:00",
+      "items": [
+        {
+          "id": 1607815,
+          "nombre": "ET MANTENCION Y RECARGA DE EXTINTORES JUNIO Y SEPTIEMBRE.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "355-187-COT26",
+      "title": "Equipamiento para Climatizacion y Aire Acondicionado",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Servicio de Salud Metropolitano Oriente",
+      "buyerRut": "61.979.270-k",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 4600000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:47",
+      "closingAt": "2026-06-22 10:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2297-860-COT26",
+      "title": "ADQUISICION DE MEDICAMENTOS Y SUPLEMENTO ALIMENTICIO ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE OSORNO",
+      "buyerRut": "69.210.100-6",
+      "buyerRegion": "Región de los Lagos ",
+      "amount": 589567,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:15",
+      "closingAt": "2026-06-22 10:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3445-119-COT26",
+      "title": "MUDADOR Y POUF PERA OLN RINCONADA",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE RINCONADA",
+      "buyerRut": "69.051.300-5",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:15",
+      "closingAt": "2026-06-22 09:30",
+      "items": [
+        {
+          "id": 1607821,
+          "nombre": "2. EETT Mudador y pouf (junio, 2026).pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4164-271-COT26",
+      "title": "Contratación de servicio de Generadores actividad.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE DONIHUE",
+      "buyerRut": "69.080.600-2",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 6000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:30",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607843,
+          "nombre": "Requerimiento y Formulario N°1.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "218-391-COT26",
+      "title": "Mantención, Reparación y repuestos de impresora Ricoh, SP C352, correspondiente al Departamento de Comunicaciones",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD SAN JOAQUIN",
+      "buyerRut": "69.254.600-8",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 480000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:25",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607834,
+          "nombre": "Reparación Impresora.doc"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057430-694-COT26",
+      "title": "Tabla espinal  adulto (SERVICIO DE URGENCIA )",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO NACIONAL DE SALUD HOSPITAL DE LOTA",
+      "buyerRut": "61.602.203-2",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 100000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:10",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607811,
+          "nombre": "Condiciones y Multas Compra Ágil 2026.pdf"
+        },
+        {
+          "id": 1607812,
+          "nombre": "FICHA TÉCNICA TABLA ESPINAL.doc"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4044-339-COT26",
+      "title": "COMPRA DE TOLDOS PARA UNIDAD DE BIENESTAR ANIMAL - MONTO INCLUYE FLETE PUESTO EN ISLA DE PASCUA - SOLICITA MEDIO AMBIENTE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE ISLA DE PASCUA",
+      "buyerRut": "69.061.800-1",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:31",
+      "closingAt": "2026-06-22 06:00",
+      "items": [
+        {
+          "id": 1607844,
+          "nombre": "MEMO N°056 - MEDIO AMBIENTE.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4044-338-COT26",
+      "title": "COMPRA DE ESTANTES PARA ORDEN DE CONTAINER DE LA DIRECCIÓN DE MEDIO AMBIENTE - MONTO INCLUYE FLETE PUESTO EN ISLA DE PASCUA - SOLICITA MEDIO AMBIENTE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE ISLA DE PASCUA",
+      "buyerRut": "69.061.800-1",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 1000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:26",
+      "closingAt": "2026-06-22 06:00",
+      "items": [
+        {
+          "id": 1607835,
+          "nombre": "MEMO N°053 - MEDIO AMBIENTE.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4401-51-COT26",
+      "title": "SC 322 INFORME DE BIOPSIAS ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SAN CLEMENTE",
+      "buyerRut": "69.110.500-8",
+      "buyerRegion": "Región del Maule ",
+      "amount": 6600000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:39",
+      "closingAt": "2026-06-20 13:00",
+      "items": [
+        {
+          "id": 1607849,
+          "nombre": "Anexo N__1 propuesta econ__mica (8).docx"
+        },
+        {
+          "id": 1607850,
+          "nombre": "TR biopsias.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4950-41-COT26",
+      "title": "Muestreo Aguas Residuales Planta de Tratamiento de Aguas Servidas",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD PUERTO OCTAY",
+      "buyerRut": "69.210.400-5",
+      "buyerRegion": "Región de los Lagos ",
+      "amount": 670000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:08",
+      "closingAt": "2026-06-20 12:00",
+      "items": [
+        {
+          "id": 1607794,
+          "nombre": "Términos de Referencia para Oferta Técnica Muestreo Aguas Residua.pdf"
+        },
+        {
+          "id": 1607795,
+          "nombre": "Solicitud de Compra N°09.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1251954-77-COT26",
+      "title": "COMPRA DE ALIMENTOS PARA EVENTO DEPORTIVO HAKA NINI Y HAKA NGARU CORPORACION DE DEPORTE Y RECREACION 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "CORPORACIÓN MUNICIPAL DE DEPORTE Y RECREACIÓN ",
+      "buyerRut": "65.499.360-2",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 1064500,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:24",
+      "closingAt": "2026-06-20 12:00",
+      "items": [
+        {
+          "id": 1607828,
+          "nombre": "WhatsApp Scan 2026-06-18 at 16.20.43.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1501513-49-COT26",
+      "title": "ADQ. DE INSUMOS DESTINADOS A “OPERATIVO COMUNITARIO DE INVIERNO” - MANTENCIÓN PREVENTIVA AUTOMOTRIZ LICEO POZO ALMONTE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Servicio Local de Educación Pública del Tamarugal",
+      "buyerRut": "61.981.030-9",
+      "buyerRegion": "Región de Tarapacá  ",
+      "amount": 800000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:34",
+      "closingAt": "2026-06-20 09:00",
+      "items": [
+        {
+          "id": 1607837,
+          "nombre": "Especificacion Técnicas Solc. Nro. 217 P02.pdf"
+        },
+        {
+          "id": 1607838,
+          "nombre": "Especificacion Técnicas Solc. Nro. 217 P02.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-552-COT26",
+      "title": "OP26-683 MATERIALES PARA MEJORAMIENTO DE BODEGA DOM PARA INSUMOS Y ARCHIVOS",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 2200000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:37",
+      "closingAt": "2026-06-19 20:30",
+      "items": [
+        {
+          "id": 1607846,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "742475-58-COT26",
+      "title": "P.12  PROGRAMA PREVENCION DE LAS VIOLENCIAS DE GENERO",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE VILLA ALEMANA",
+      "buyerRut": "69.061.500-2",
+      "buyerRegion": "Región de Valparaíso ",
+      "amount": 503604,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:40",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607853,
+          "nombre": "LISTADO PRODUCTOS.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-565-COT26",
+      "title": "OP26-698 Materiales de construcción Bancales Pedagógicos, enmarcado en el programa de Desarrollo Inclusivo Territorial (DIT)",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 600000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:44",
+      "closingAt": "2026-06-19 19:45",
+      "items": [
+        {
+          "id": 1607862,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "867990-301-COT26",
+      "title": "Piochas calidad digital, FAHU, 91497",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE SANTIAGO DE CHILE",
+      "buyerRut": "60.911.000-7",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 300000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:39",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607851,
+          "nombre": "91497.pdf"
+        },
+        {
+          "id": 1607852,
+          "nombre": "A N E X O DATOS BANCARIOS.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "612-117-COT26",
+      "title": "ADQUISICIÓN DE CONTENEDORES DE BASURA 30 LT",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO AGRICOLA Y GANADERO",
+      "buyerRut": "61.308.000-7",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 2000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:18",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607817,
+          "nombre": "10. Anexo N° 1 (Requerimiento).pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3833-358-COT26",
+      "title": "SERVICIO DE TRASLADO- UIF",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE RIO BUENO",
+      "buyerRut": "69.201.000-0",
+      "buyerRegion": "Región de Los Ríos",
+      "amount": 4427800,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:47",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607865,
+          "nombre": "EE TT REQ N°34453 AL 34456.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2296-351-COT26",
+      "title": "Adquisición de Artículos Escolares, Guía de Pedido N°26651 Seguridad Pública",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE CONCHALI",
+      "buyerRut": "69.070.200-2",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 220000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:42",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607854,
+          "nombre": "EE.TT (artículos escolares).pdf"
+        },
+        {
+          "id": 1607855,
+          "nombre": "CDF (artículos escolares).pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2107-126-COT26",
+      "title": "GUANTES ANTICORTE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO DE SALUD HOSPITAL DE SANTA CRUZ",
+      "buyerRut": "61.602.148-6",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 300000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:44",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607863,
+          "nombre": "imagen referencial guante.jpg"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1411-666-COT26",
+      "title": "C.C.P. COLINA I; ADQUISICION DE MATERIALES DE OFICINA PROGRAMA PPL",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Dirección Regional de Gendarmeria - Metropolitana",
+      "buyerRut": "61.933.800-6",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 850000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:47",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607864,
+          "nombre": "REQUERIMIENTO DE ARTICULOS DE OFICINA PPL.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1058129-69-COT26",
+      "title": "LGL, COMPRA DE ALUMINIO HIDROXIDO 500 MG COMPRIMIDO P/2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO SALUD TALCAHUANO HOSPITAL PENCO-LIRQUEN",
+      "buyerRut": "61.602.198-2",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 250000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:23",
+      "closingAt": "2026-06-19 19:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057509-658-COT26",
+      "title": "VASO TERMICO CON TAPA 240 CC SIMILAR A DART(PBA)",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "HOSPITAL CLINICO HERMINDA MARTIN",
+      "buyerRut": "61.607.001-0",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 1430000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:44",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607856,
+          "nombre": "ANEXO 3 ESPECIFICACIONES TECNICAS.xlsx"
+        },
+        {
+          "id": 1607857,
+          "nombre": "ANEXO 2 OFERTA ECONOMICA.xlsx"
+        },
+        {
+          "id": 1607858,
+          "nombre": "ANEXO 1 CRITERIOS DE EVALUACION.docx"
+        },
+        {
+          "id": 1607859,
+          "nombre": "IMAGEN REFERENCIAL.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "4062-524-COT26",
+      "title": "CONTRATACION DE SERVICIO DE ESPACIOS DE DIFUSION RADIAL Y DIGITAL DE INFORMACION MUNICIPAL",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE MARIQUINA",
+      "buyerRut": "69.200.400-0",
+      "buyerRegion": "Región de Los Ríos",
+      "amount": 833000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:41",
+      "closingAt": "2026-06-19 18:50",
+      "items": [
+        {
+          "id": 1607861,
+          "nombre": "Bases administrativas y tecnicas -  Contratacion de servicio  de.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2296-350-COT26",
+      "title": "Servicio de Coctelería, Guía de Pedido N°26685 Seguridad Pública",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE CONCHALI",
+      "buyerRut": "69.070.200-2",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 1200000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:10",
+      "closingAt": "2026-06-19 18:35",
+      "items": [
+        {
+          "id": 1607813,
+          "nombre": "EE.TT (coctelería).pdf"
+        },
+        {
+          "id": 1607814,
+          "nombre": "CDF (coctelería).pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057509-657-COT26",
+      "title": " ENVASE RECTANGULAR DE ALUMINIO CON TAPA 350 CC (PBA)",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "HOSPITAL CLINICO HERMINDA MARTIN",
+      "buyerRut": "61.607.001-0",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 1130000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:32",
+      "closingAt": "2026-06-19 18:35",
+      "items": [
+        {
+          "id": 1607839,
+          "nombre": "ANEXO 2 OFERTA ECONOMICA.xlsx"
+        },
+        {
+          "id": 1607840,
+          "nombre": "imgen referencial.jpg"
+        },
+        {
+          "id": 1607841,
+          "nombre": "ANEXO 3 ESPECIFICACIONES TECNICAS.xlsx"
+        },
+        {
+          "id": 1607842,
+          "nombre": "ANEXO 1 CRITERIOS DE EVALUACION.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2731-659-COT26",
+      "title": "COMUNICACIONES_SERVICIO DE COFFEE",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PENAFLOR",
+      "buyerRut": "69.071.700-K",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 534400,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:30",
+      "closingAt": "2026-06-19 18:32",
+      "items": [
+        {
+          "id": 1607845,
+          "nombre": "ANEXO 1 SERVICIO DE COFFE.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2731-658-COT26",
+      "title": "SC N°05-182_DIDECO_DPTO SOCIAL_SERVICIO DE ALIMENTACIÓN ALBUERGUE MUNICIPAL",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE PENAFLOR",
+      "buyerRut": "69.071.700-K",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 2000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:28",
+      "closingAt": "2026-06-19 18:30",
+      "items": [
+        {
+          "id": 1607836,
+          "nombre": "ANEXO 1 ALBUERGUE.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1590-53-COT26",
+      "title": " ADQUISICIÓN DE ARTICULOS DE ASEO - CÓDIGO E1O2RT9",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SUBSECRETARIA DEL MINISTERIO DE AGRICULT",
+      "buyerRut": "61.301.000-9",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 125000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:09",
+      "closingAt": "2026-06-19 18:30",
+      "items": [
+        {
+          "id": 1607797,
+          "nombre": "Especificaciones técnicas y administrativas - Artículos de Aseo B.pdf"
+        },
+        {
+          "id": 1607798,
+          "nombre": "ANEXO DE POSTULACIÓN ARTICULOS DE ASEO.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1516-134-COT26",
+      "title": " ORASMI CASO 174 - CAJAS DE CERÁMICA",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "DELEGACIÓN PRESIDENCIAL PROVINCIAL DE CORDILLERA",
+      "buyerRut": "60.511.131-9",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 250000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:23",
+      "closingAt": "2026-06-19 18:30",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1208094-38-COT26",
+      "title": "Contratación de servicio de cafetería para actividad de Jornada Regional de la Dirección Regional de Coquimbo.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCI",
+      "buyerRut": "62.000.890-7",
+      "buyerRegion": "Región de Coquimbo ",
+      "amount": 750000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:18",
+      "closingAt": "2026-06-19 18:30",
+      "items": [
+        {
+          "id": 1607826,
+          "nombre": "TDR_CA_Gabinete-Coffee.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1173433-8-COT26",
+      "title": "Toner CET Valle Verde Fondos Propios Junio 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Centro de Educación y Trabajo Valle Verde",
+      "buyerRut": "75.281.400-7",
+      "buyerRegion": "Región Aysén del General Carlos Ibáñez del Campo",
+      "amount": 200000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:21",
+      "closingAt": "2026-06-19 18:30",
+      "items": [
+        {
+          "id": 1607830,
+          "nombre": "01.- B.A.C.A. Toner.pdf"
+        },
+        {
+          "id": 1607831,
+          "nombre": "03.- Anexo 01.docx"
+        },
+        {
+          "id": 1607832,
+          "nombre": "02.- FOSOADR N° 26. 17.06.2026.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1079967-432-COT26",
+      "title": "SERVICIO INSTALACIÓN MONTAJE, ALINEAMIENTO Y BALANCEO PARA LOS VEHICULOS FISCALESVPC-718, VPC-1454, AP-1913 PARA LA SECCIÓN SIPOLCAR IQUIQUE.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SECCIÓN COMPRAS I ZONA",
+      "buyerRut": "60.505.102-2",
+      "buyerRegion": "Región de Tarapacá  ",
+      "amount": 105000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:20",
+      "closingAt": "2026-06-19 18:22",
+      "items": [
+        {
+          "id": 1607829,
+          "nombre": "ANEXO REQUERIMIENTOS TECNICOS.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1499900-79-COT26",
+      "title": "COTIZACIÓN PARA LA ADQUISICIÓN DE MATERIALES PARA TALLER TSE DE H SOCIALES PARA EL CENTRO IP IRC DE GRANEROS",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Servicio Nacional de Reinserción Social Juvenil",
+      "buyerRut": "62.000.970-9",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 470000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:18",
+      "closingAt": "2026-06-19 18:20",
+      "items": [
+        {
+          "id": 1607822,
+          "nombre": "ANEXOS CA.docx"
+        },
+        {
+          "id": 1607823,
+          "nombre": "REQUERIMIENTOS TECNICOS TSE H SOCIALES IP IRC GRANEROS.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1232565-128-COT26",
+      "title": "Adquisición sillas de escritorio ULS21991 ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE LA SERENA",
+      "buyerRut": "70.783.100-6",
+      "buyerRegion": "Región de Coquimbo ",
+      "amount": 641122,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:15",
+      "closingAt": "2026-06-19 18:16",
+      "items": [
+        {
+          "id": 1607824,
+          "nombre": "REQUERIMIENTOS AG 167.pdf"
+        },
+        {
+          "id": 1607825,
+          "nombre": "Cláusulas Compras Agil 2026.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2776-472-COT26",
+      "title": "CONTRATACION DE SERVICIOS DE PROFESIONAL PARA CAPACITACION A USUARIOS PRODESAL RENGO, SEGUN ESPECIFICACIONES DE LOS TERMINOS DE REQUERIMIENTOS ADJUNTO.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE RENGO",
+      "buyerRut": "69.081.200-2",
+      "buyerRegion": "Región del Libertador General Bernardo O´Higgins",
+      "amount": 400000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:08",
+      "closingAt": "2026-06-19 18:15",
+      "items": [
+        {
+          "id": 1607806,
+          "nombre": "DECLARACION JURADA CONFLICTO DE INTERES PARA CONTRATAR .docx"
+        },
+        {
+          "id": 1607807,
+          "nombre": "TERM. REQUERIMIENTOS CONTRATACION PROFESIONALES PARA CHARLAS PROD.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3494-176-COT26",
+      "title": "COMPRA MATERIALES DE ASEO PARA JARDIN SEMILLITAS DE CAJON - SOLICTUD DE COMPRA N° 13080",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE VILCUN",
+      "buyerRut": "69.190.800-3",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 2000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:08",
+      "closingAt": "2026-06-19 18:10",
+      "items": [
+        {
+          "id": 1607808,
+          "nombre": "ANEXO 1 IDENTIFICACIÓN DEL OFERENTE 2026.docx"
+        },
+        {
+          "id": 1607809,
+          "nombre": "MATERIALES DE ASEO PARA JARDIN SEMILLITAS DE CAJON (2).docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "5609-88-COT26",
+      "title": "Diseño y construcción de Curso",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE CHILE",
+      "buyerRut": "60.910.000-1",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 7150600,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:29",
+      "closingAt": "2026-06-19 19:30",
+      "items": [
+        {
+          "id": 1607902,
+          "nombre": "Bases Compra Ágil para curso (1).pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1501718-2-COT26",
+      "title": "ADQUISICION \" ESPIROMETRO DE ESCRITORIO MODELO  EASY ON PC\"",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Corporación Municipal de Desarrollo Social de Coli",
+      "buyerRut": "70.941.900-5",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 3000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:25",
+      "closingAt": "2026-06-22 17:00",
+      "items": [
+        {
+          "id": 1607904,
+          "nombre": "ANEXO COMPRA AGIL PARA LA ADQUISICION ESPIROMETRO DE ESCRITORIO.docx"
+        },
+        {
+          "id": 1607905,
+          "nombre": "SOLICITUD FORMAL Y ANEXO.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-570-COT26",
+      "title": "OP26-703, OP26-733, OP26-746 Medicamentos para diversos casos sociales de la comuna.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 200000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:25",
+      "closingAt": "2026-06-19 20:15",
+      "items": [
+        {
+          "id": 1607903,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1990-13-COT26",
+      "title": "Artículos de oficina",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "SERVICIO NACIONAL DE GEOLOGIA Y MINERIA",
+      "buyerRut": "61.702.000-9",
+      "buyerRegion": "Región de Antofagasta ",
+      "amount": 550000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:21",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607901,
+          "nombre": "Términos de referencia materiales de oficina.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1271178-122-COT26",
+      "title": "SEGUROS GENERALES ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "CORPORACION MUNICIPAL DE DESARROLLO SOCIAL DE MACUL",
+      "buyerRut": "71.369.900-4",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 5000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:18",
+      "closingAt": "2026-06-19 19:30",
+      "items": [
+        {
+          "id": 1607900,
+          "nombre": "Terminos_de_Referencia Seguros.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-569-COT26",
+      "title": "OP26-738 ADQUISICIÓN MATERIALES DE OFICINA PARA RSH – CONVENIO 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 350000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:16",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607899,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3250-369-COT26",
+      "title": "CAPUERTOCAB-MANTENIMIENTO PREVENTIVO VEHICULO FISCAL L-1405",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "GOBERNACION MARITIMA DE PUERTO MONTT",
+      "buyerRut": "61.102.046-5",
+      "buyerRegion": "Región de los Lagos ",
+      "amount": 231706,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:14",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607895,
+          "nombre": "ANEXO A.doc"
+        },
+        {
+          "id": 1607896,
+          "nombre": "PLIEGO_CONDICIONES.pdf"
+        },
+        {
+          "id": 1607897,
+          "nombre": "BASES TECNICAS.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "5521-56-COT26",
+      "title": "Arriendo e instalación de cortinaje, 6 estufas con cilindro, 10 focos par led y 6 focos led.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE CHILE",
+      "buyerRut": "60.910.000-1",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 2500000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:12",
+      "closingAt": "2026-06-22 15:00",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3947-384-COT26",
+      "title": "INSTALACIÓN DE AGUA POTABLE Y ALCANTARILLADO PARA 37 STAND, FIES-TA DE SAN JUAN, XXII VERSION",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SANTA JUANA",
+      "buyerRut": "69.151.400-5",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 2000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:10",
+      "closingAt": "2026-06-20 10:00",
+      "items": [
+        {
+          "id": 1607898,
+          "nombre": "REQUERIMIENTO AGUA POTABLE  FIESTA SAN JUAN  XXII 2026.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-568-COT26",
+      "title": "OP26-753 ADQUIRIR DUPLICADO DE PLACA PATENTE REMOLQUE MUNICIPAL VIA 541",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 45000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:10",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607894,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "634-203-COT26",
+      "title": "Adquisición de PasajeS AéreoS con destino Madrid, Londres y Roma",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "DIRECCION GENERAL DE GENDARMERIA DE CHIL",
+      "buyerRut": "61.004.000-4",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 7000000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:09",
+      "closingAt": "2026-06-19 19:10",
+      "items": [
+        {
+          "id": 1607891,
+          "nombre": "REQUERIMIENTO ADMINISTRATIVO Y TÉCNICO PASAJE A MADRID, LONDRES Y.docx"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1057503-1720-COT26",
+      "title": "Adquisición de 1 Sonda Gastro Yeyunal de 22 Fr, con largo superior a 22 cm (adjuntar ficha técnica del producto).",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "HOSPITAL PADRE ALBERTO HURTADO",
+      "buyerRut": "61.958.500-3",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 100000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:06",
+      "closingAt": "2026-06-22 14:45",
+      "items": []
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-567-COT26",
+      "title": "OP26-736 CONTRATACIÓN DE SERVICIO DE TELEFONÍA MÓVIL Y DATOS – CONVENIO RSH 2026",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 100000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:06",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607892,
+          "nombre": "OP26-736.pdf"
+        },
+        {
+          "id": 1607893,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3904-566-COT26",
+      "title": "OP26-745 Servicio de Arriendo de Escenario y Pantalla Led",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE BULNES",
+      "buyerRut": "69.141.200-8",
+      "buyerRegion": "Región del Ñuble",
+      "amount": 360000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 19:03",
+      "closingAt": "2026-06-19 20:00",
+      "items": [
+        {
+          "id": 1607889,
+          "nombre": "OP26-745.pdf"
+        },
+        {
+          "id": 1607890,
+          "nombre": "2025 Requerimientos Minimos Adquisiciones.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "809-36-COT26",
+      "title": "MATERIALES  DE OFICINAS PARA EL PAT REGIONAL DE CONADI.",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "CORP NACIONAL DE DESARROLLO INDIGENA",
+      "buyerRut": "72.396.000-2",
+      "buyerRegion": "Región de la Araucanía ",
+      "amount": 1370000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:59",
+      "closingAt": "2026-06-22 09:30",
+      "items": [
+        {
+          "id": 1607888,
+          "nombre": "Requerimiento materiales de oficina año 2026.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "2321-134-COT26",
+      "title": "Adquisiicón de Uniformes para taller de Voleibol de escuela Gerónimo Lagos Lisboa, solic. 62",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE SAN JAVIER",
+      "buyerRut": "69.130.100-1",
+      "buyerRegion": "Región del Maule ",
+      "amount": 276000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:58",
+      "closingAt": "2026-06-22 10:00",
+      "items": [
+        {
+          "id": 1607886,
+          "nombre": "ESPECIFICACIONES TECNICAS EQUIPO DEPORTIVO VOLEIBOL E-424.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "886954-312-COT26",
+      "title": "?CANULA YANKAHUER STANDAR PUNTA DE BULBO SIN CONTROL DE VENTILACION, DESECHABLE  ",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "HOSPITAL GUILLERMO GRANT BENAVENTE DE CO",
+      "buyerRut": "61.602.189-3",
+      "buyerRegion": "Región del Biobío ",
+      "amount": 340000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:56",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607887,
+          "nombre": "ANEXO COMPRA AGIL.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "355-188-COT26",
+      "title": "Bombas de Condensación para equipos de clima de 9000 a 18000 BTU:",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Servicio de Salud Metropolitano Oriente",
+      "buyerRut": "61.979.270-k",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 400000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:54",
+      "closingAt": "2026-06-22 10:00",
+      "items": [
+        {
+          "id": 1607885,
+          "nombre": "Bombas de condensacion.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "5603-94-COT26",
+      "title": "(Dirvex) Materiales para laminado en fibra de vidrio - URacing",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "UNIVERSIDAD DE CHILE",
+      "buyerRut": "60.910.000-1",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 331542,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:54",
+      "closingAt": "2026-06-22 15:00",
+      "items": [
+        {
+          "id": 1607884,
+          "nombre": "Características Materiales para laminado en fibra de vidrio.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "3438-111-COT26",
+      "title": " ADQUISICIÓN DE ELEMENTOS DE PELUQUERÍA PARA SER EMPLEADO POR LOS SOLDADOS CONSCRIPTOS DEL BATALLÓN DEL INSTITUTO",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "Ejercito de Chile",
+      "buyerRut": "61.101.022-2",
+      "buyerRegion": "Región Metropolitana de Santiago",
+      "amount": 1360000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:52",
+      "closingAt": "2026-06-22 09:00",
+      "items": [
+        {
+          "id": 1607882,
+          "nombre": "DECLARACIÓN JURADA SIMPLE COMPRAS AGILES.docx"
+        },
+        {
+          "id": 1607883,
+          "nombre": "ESPECIFICACIONES TÉCNICAS 3438-111-COT26.pdf"
+        }
+      ]
+    },
+    {
+      "source": "mercado-publico",
+      "module": "compra-agil",
+      "externalCode": "1738-225-COT26",
+      "title": "ADQUISICION DE REPUESTOS PARA VEHÍCULOS MUNICIPALES",
+      "description": "",
+      "statusCode": "publicada",
+      "statusLabel": "Publicada",
+      "buyerName": "I MUNICIPALIDAD DE VILLA ALEGRE",
+      "buyerRut": "69.130.200-8",
+      "buyerRegion": "Región del Maule ",
+      "amount": 3100000,
+      "currency": "CLP",
+      "publishedAt": "2026-06-18 18:51",
+      "closingAt": "2026-06-19 19:00",
+      "items": [
+        {
+          "id": 1607878,
+          "nombre": "26494_97. REPUESTOS VEH MUN.pdf"
+        },
+        {
+          "id": 1607879,
+          "nombre": "26494_26456_17.50 16LT.pdf"
+        },
+        {
+          "id": 1607880,
+          "nombre": "sol_26494.pdf"
+        },
+        {
+          "id": 1607881,
+          "nombre": "26494_26456_275_70R22.5.pdf"
+        }
+      ]
+    }
+  ]
+}

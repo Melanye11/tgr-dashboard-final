@@ -1,0 +1,1 @@
+export { listarComprasAgiles, obtenerDetalleCompraAgil } from './compraAgilService';
