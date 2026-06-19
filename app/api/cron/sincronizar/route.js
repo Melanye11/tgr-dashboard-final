@@ -1,5 +1,7 @@
 import { revalidateTag } from 'next/cache';
 import { NextResponse } from 'next/server';
+import { getApiById } from '@/config/apis';
+
 
 export async function GET(request) {
   const authHeader = request.headers.get('authorization');
@@ -8,9 +10,20 @@ export async function GET(request) {
   }
 
   try {
-    // Next.js hará una petición real a la TGR.
-    revalidateTag('datos-tgr');
-    return NextResponse.json({ success: true, message: 'Caché de TGR sincronizada correctamente' });
+    const { searchParams } = new URL(request.url);
+    const apiId = searchParams.get('api') || 'tgr';
+    const api = getApiById(apiId);
+
+    if (!api) {
+      return NextResponse.json({ success: false, error: 'API no encontrada' }, { status: 404 });
+    }
+
+    revalidateTag(api.cacheTag);
+    return NextResponse.json({
+      success: true,
+      message: `Caché de ${api.name} sincronizada correctamente`,
+    });
+
   } catch (error) {
     return NextResponse.json({ success: false, error: 'Error al sincronizar' }, { status: 500 });
   }

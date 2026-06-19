@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Dashboard TGR',
+  title: 'EstadoHUB — APIs Públicas',
 };
 
 export default function RootLayout({ children }) {
